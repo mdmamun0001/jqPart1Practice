@@ -29,6 +29,7 @@
   <button class="btn5 btn btn-success">fade in</button>
   <button class="btn6 btn btn-success">fade to</button>
   <button class="btn7 btn btn-success"> fade toggle</button>
+
   <p class="data">abc abc abac abc ngnj kwf </p>
   <ul class="lists">
     <li>home1</li>
@@ -37,6 +38,7 @@
     <li>home4</li>
     <li>home5</li>
   </ul>
+  <a href="calculatorcode.html" class="btn btn-success">goto calculate</a>
   <div id="draggable" class="ui-widget-content">
   <p>Drag me around</p>
 </div>
@@ -73,6 +75,8 @@
   <h1>Checkbox and radio button widgets</h1>
  
   <h2>Radio Group</h2>
+  <button type="button" class="btn  btn-success remove" >remove</button>
+  <div id="div1">
   <fieldset>
     <legend>Select a Location: </legend>
     <label for="radio-1">New York</label>
@@ -82,7 +86,96 @@
     <label for="radio-3">London</label>
     <input type="radio" name="radio-1" id="radio-3">
   </fieldset>
+
+
 </div>
+   <button type="button" class="btn  btn-success up" >slide up</button>
+ <button type="button" class="btn btn-success down">slide down</button>
+ <button type="button" class="btn btn-success toggle">Toggle</button>
+ <button type="button" class="btn btn-success toggle" id="stop">stop</button>
+        <div class="slider text-center">slider</div>
+
+<p id="test">This is some <b>bold</b> text in a paragraph.</p>
+<button id="btn11">Show Text</button>
+<button id="btn21">Show HTML</button>
+<div class="p1">The mouseenter() method attaches an event handler function to an HTML element.</div>
+<hr>
+<button class="ani">Start Animation</button>
+<div class="zn" style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+
+<hr>
+
+ 
+<div class="demo">
+ 
+<form action="#">
+ 
+  <div id="circle"></div>
+ 
+  <fieldset>
+    <label for="radius">Circle radius</label>
+    <select name="radius" id="radius">
+      <option value="50">50px</option>
+      <option value="100">100px</option>
+      <option value="150" selected="selected">150px</option>
+      <option value="200">200px</option>
+      <option value="250">250px</option>
+    </select>
+ 
+    <label for="color">Circle color</label>
+    <select name="color" id="color">
+      <option value="black">Black</option>
+      <option value="red">Red</option>
+      <option value="yellow" selected="selected">Yellow</option>
+      <option value="blue">Blue</option>
+      <option value="green">Green</option>
+    </select>
+  </fieldset>
+ 
+</form>
+ 
+</div>
+
+<div id="progressbar"></div>
+<button id="numButton">Random Value - Determinate</button>
+<button id="falseButton">Indeterminate</button>
+<button id="colorButton">Random Color</button>
+ <div>  
+<ul id="menu">
+  <li class="ui-state-disabled"><div>Toys (n/a)</div></li>
+  <li><div>Books</div></li>
+  <li><div>Clothing</div></li>
+  <li><div>Electronics</div>
+    <ul>
+      <li class="ui-state-disabled"><div>Home Entertainment</div></li>
+      <li><div>Car Hifi</div></li>
+      <li><div>Utilities</div></li>
+    </ul>
+  </li>
+  <li><div>Movies</div></li>
+  <li><div>Music</div>
+    <ul>
+      <li><div>Rock</div>
+        <ul>
+          <li><div>Alternative</div></li>
+          <li><div>Classic</div></li>
+        </ul>
+      </li>
+      <li><div>Jazz</div>
+        <ul>
+          <li><div>Freejazz</div></li>
+          <li><div>Big Band</div></li>
+          <li><div>Modern</div></li>
+        </ul>
+      </li>
+      <li><div>Pop</div></li>
+    </ul>
+  </li>
+  <li class="ui-state-disabled"><div>Specials (n/a)</div></li>
+</ul>
+</div>
+<!-- <div> <p>Date: <input type="text" id="datepicker"></p></div> -->s
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -92,57 +185,6 @@
    
  
     <script src="js/script.js"></script>
-
-    <script>
-      $(document).ready(function(){
-        alert("hi how are you");
-        $('.btn1').click(function(){
-          $('.data').show('slow');
-        });
-         $('.btn2').click(function(){
-          $('.data').hide(2000);
-        });
-         $('.btn3').click(function(){
-          $('.data').toggle('fast');
-        });
-         $('.btn4').click(function(){
-          $('.data').fadeOut();
-         });
-         $('.btn5').click(function(){
-          $('.data').fadeIn(3000);
-         });
-         $('.btn6').click(function(){
-          $('.data').fadeTo();
-         });
-         $('.btn7').click(function(){
-          $('.data').fadeToggle(2000);
-         });
-
-
-          $('.lists li:first').click(function(){
-          $('.lists  li:first').addClass('first');
-        });
-         $('.lists li:last').click(function(){
-          $('.lists li:odd').addClass('last');
-        });
-         $('.lists li:odd').click(function(){
-          $('.lists li:odd').addClass('odd');
-         });
-         $('.lists li:even').click(function(){
-          $('.lists li:even').addClass('even');
-         });
-         $( "#draggable" ).draggable();
-
-        $( "#sortable" ).sortable({
-      placeholder: "ui-state-highlight"
-    });
-
-    $( "#resizable" ).resizable();
-    $( "#selectable" ).selectable();
-$( "input" ).checkboxradio()
-  } );
-
-      
-    </script>
+    
   </body>
 </html>
