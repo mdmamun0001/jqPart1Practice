@@ -87,3 +87,32 @@ li{
    font-size: 4em;
    text-align: center;
    }
+   .slider{
+   	width: 100%;
+   	height:600px;
+   	background-color: yellow;
+   	/*display: none;*/
+   }
+   fieldset {
+      border: 0;
+      margin-left: 300px;
+    }
+    label {
+      display: block;
+      margin: 20px 0 0 0;
+    }
+ 
+    #circle {
+      float: left;
+      background: yellow;
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+    }
+    #progressbar .ui-progressbar-value {
+    background-color: #ccc;
+  }
+  .ui-menu { 
+  	width: 150px; 
+  }
+  
